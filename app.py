@@ -17,6 +17,10 @@ st.markdown("""
     visibility: hidden;
     height: 0;
   }
+  iframe[title="st.iframe"] {
+    height: 100vh !important;
+    border: 0;
+  }
   .stApp {
     overflow: hidden;
   }
@@ -38,6 +42,18 @@ html_final = """
         font-family: "Space Grotesk", sans-serif;
         background-color: #000;
         background-image: url("https://www.transparenttextures.com/patterns/micro-carbon.png");
+      }
+
+      html,
+      body {
+        height: 100%;
+        overflow: hidden;
+      }
+
+      main {
+        height: min(100vh, 800px);
+        overflow-y: auto;
+        overscroll-behavior: contain;
       }
 
       .bento-card {
@@ -538,8 +554,24 @@ html_final = """
         </p>
       </footer>
     </main>
+    <script>
+      document.addEventListener("click", (event) => {
+        const link = event.target.closest('a[href^="#"]');
+        const scrollContainer = document.querySelector("main");
+        const target = link && document.getElementById(link.hash.slice(1));
+
+        if (!link || !target || !scrollContainer) return;
+
+        event.preventDefault();
+        const top =
+          target.getBoundingClientRect().top -
+          scrollContainer.getBoundingClientRect().top +
+          scrollContainer.scrollTop;
+        scrollContainer.scrollTo({ top, behavior: "auto" });
+      });
+    </script>
   </body>
 </html>
 """
 
-st.iframe(html_final, width="stretch", height="content")
+st.iframe(html_final, width="stretch", height=800)
