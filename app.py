@@ -220,7 +220,7 @@ html_final = """
             id="menu-items"
             class="hidden absolute top-full right-0 mt-2 flex-col bg-[#0a0a0a] border border-[#82e637]/20 rounded-2xl p-6 gap-4 z-50 text-[10px] uppercase tracking-widest min-w-[150px] shadow-2xl shadow-[#82e637]/10"
           >
-            <a href="#home" class="hover:text-[#82e637]">Home</a>
+            <a href="#home" class="text-[#82e637] font-bold">Home</a>
             <a
               href="https://github.com/meazmiii"
               target="_blank"
@@ -251,7 +251,9 @@ html_final = """
         <nav
           class="hidden md:flex gap-6 text-[10px] uppercase tracking-[0.3em] font-bold text-gray-500"
         >
-          <a href="#home" class="hover:text-[#82e637] transition text-glow"
+          <a
+            href="#home"
+            class="text-white border-b border-[#82e637] transition text-glow"
             >Home</a
           >
           <a
