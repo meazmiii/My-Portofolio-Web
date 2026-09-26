@@ -54,6 +54,12 @@ html_final = """
         height: min(100vh, 800px);
         overflow-y: auto;
         overscroll-behavior: contain;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+      }
+
+      main::-webkit-scrollbar {
+        display: none;
       }
 
       .bento-card {
