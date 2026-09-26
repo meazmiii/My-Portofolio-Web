@@ -214,7 +214,6 @@ html_final = """
             id="menu-items"
             class="hidden absolute top-full right-0 mt-2 flex-col bg-[#0a0a0a] border border-[#82e637]/20 rounded-2xl p-6 gap-4 z-50 text-[10px] uppercase tracking-widest min-w-[150px] shadow-2xl shadow-[#82e637]/10"
           >
-            <a href="#experience" class="hover:text-[#82e637]">Experience</a>
             <a
               href="https://github.com/meazmiii"
               target="_blank"
