@@ -17,11 +17,6 @@ st.markdown("""
     visibility: hidden;
     height: 0;
   }
-  iframe {
-    width: 100vw !important;
-    height: 100vh !important;
-    border: none;
-  }
   .stApp {
     overflow: hidden;
   }
@@ -547,4 +542,4 @@ html_final = """
 </html>
 """
 
-st.html(html_final, unsafe_allow_javascript=True)
+st.iframe(html_final, width="stretch", height="content")
