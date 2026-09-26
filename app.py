@@ -181,7 +181,7 @@ html_final = """
   <body
     class="text-white selection:bg-[#82e637] selection:text-black p-4 md:p-10"
   >
-    <main class="max-w-[1400px] mx-auto">
+    <main id="home" class="max-w-[1400px] mx-auto">
       <header
         class="relative flex justify-between items-center mb-10 border-b border-white/5 pb-6"
       >
@@ -220,6 +220,7 @@ html_final = """
             id="menu-items"
             class="hidden absolute top-full right-0 mt-2 flex-col bg-[#0a0a0a] border border-[#82e637]/20 rounded-2xl p-6 gap-4 z-50 text-[10px] uppercase tracking-widest min-w-[150px] shadow-2xl shadow-[#82e637]/10"
           >
+            <a href="#home" class="hover:text-[#82e637]">Home</a>
             <a
               href="https://github.com/meazmiii"
               target="_blank"
@@ -241,7 +242,7 @@ html_final = """
             <a
               href="https://wa.me/6283876788630"
               target="_blank"
-              class="text-[#82e637]"
+              class="hover:text-[#82e637]"
               >WhatsApp</a
             >
           </nav>
@@ -250,6 +251,9 @@ html_final = """
         <nav
           class="hidden md:flex gap-6 text-[10px] uppercase tracking-[0.3em] font-bold text-gray-500"
         >
+          <a href="#home" class="hover:text-[#82e637] transition text-glow"
+            >Home</a
+          >
           <a
             href="#experience"
             class="hover:text-[#82e637] transition text-glow"
@@ -276,7 +280,7 @@ html_final = """
           <a
             href="https://wa.me/6283876788630"
             target="_blank"
-            class="text-white border-b border-[#82e637]"
+            class="hover:text-[#82e637] transition text-glow"
             >WhatsApp</a
           >
         </nav>
