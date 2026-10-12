@@ -535,6 +535,31 @@ html_final = """
                 >Open Website ↗</a
               >
             </div>
+
+            <div
+              class="project-item bento-card p-8 rounded-[40px] flex flex-col justify-between min-h-[320px]"
+            >
+              <div>
+                <span
+                  class="text-[10px] text-[#82e637] font-bold uppercase tracking-[0.3em]"
+                  >Personal Project</span
+                >
+                <h3 class="text-2xl font-bold mt-4 uppercase italic text-white">
+                  Ritme
+                </h3>
+                <p class="text-gray-500 text-xs mt-3 leading-relaxed italic">
+                  Jurnal cutting yang praktis: checklist makanan, atur porsi,
+                  pantau kalori dan protein, serta bisa dipasang di HP.
+                </p>
+              </div>
+              <a
+                href="https://meazmiii.github.io/ritme-cutting/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-[10px] font-bold uppercase text-[#82e637] border-b border-[#82e637]/30 self-start pb-1"
+                >Open Website ↗</a
+              >
+            </div>
           </div>
         </div>
         <section
